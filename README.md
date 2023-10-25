@@ -1,5 +1,5 @@
 
-开源界最完整的dubbo3.0实例代码，几乎包含了dubbo3全部功能
+开源界最完整的dubbo3.0示例代码，几乎包含了dubbo3全部功能
 ===============
 采用DDD架构设计，典型的微服务设计思想，可以直接作为dubbo项目的脚手架，吊打市面上所有的dubbo示例工程
 ===============
@@ -19,12 +19,17 @@
 
 # 工程代码说明
 1、父工程有7个子工程，典型分布式微服务模块化开发
+
 2、fusion-bff 是业务聚合服务实例
+
 3、fusion-restful 北向流量入口，对外暴露接口服务
+
 4、fusion-trip 南向接口服务，调用三方接口服务
+
 5、fusion-common 核心模块的封装
+
 6、fusion-validation 基于jsr303的标准校验实现
-np
+
 # dubbo学习快速入口
 - 最权威学习地址：https://github.com/dubbo
 - dubbo-admin - Console for monitoring and managing your services.
