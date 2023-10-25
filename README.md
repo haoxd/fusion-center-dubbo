@@ -16,6 +16,7 @@
 - IDE(JAVA)： Eclipse安装lombok插件 或者 IDEA
 - 依赖管理：Maven
 - 数据库：RDS
+- 注册中心：nacos
 
 # 工程代码说明
 1、父工程有7个子工程，典型分布式微服务模块化开发
