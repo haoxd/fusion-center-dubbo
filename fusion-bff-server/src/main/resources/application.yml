@@ -1,0 +1,24 @@
+server:
+  shutdown: graceful
+spring:
+  profiles:
+    active: ${profileActive}
+  application:
+    name: bff-server
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  application:
+    name: bff-server
+    shutwait: 30000
+  scan:
+    base-packages: com.fusion.center.bff.interfaces.rpc
+mybatis-plus:
+  mapper-locations: classpath:/mapper/**/*Mapper.xml
+  typeAliasesPackage: com.fusion.center.bff.domain.model.entity
+  global-config:
+    db-config:
+      id-type: assign_id
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true

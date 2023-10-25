@@ -1,0 +1,13 @@
+server:
+  shutdown: graceful
+spring:
+  profiles:
+    active: ${profileActive}
+  application:
+    name: restful-server
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  application:
+    name: restful-server
+    shutwait: 30000

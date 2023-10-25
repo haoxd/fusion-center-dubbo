@@ -1,0 +1,50 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**
+!**/src/test/**
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+
+### VS Code ###
+.vscode/
+transaction-logs/
+
+out/
+fusion_app/src/main/webapp/res.version.properties.encrypt
+fusion_app/src/main/webapp/template/ors-interface.xml
+fusion_app/src/main/webapp/template/iom-interface.xml
+fusion_app/src/main/webapp/encrypt/
+fusion_app/src/main/webapp/res.version.properties
+fusion_strategy/fusion_strategy_common/src/main/resources/target
+fusion_strategy/fusion_strategy_component_service/src/main/resources/target/
+
+**/encrypt/
+**/res.version.properties
+**/target/
+**/.idea/
+node_modules/
+autoTemplate/
+**/server-page.xml
+logs/

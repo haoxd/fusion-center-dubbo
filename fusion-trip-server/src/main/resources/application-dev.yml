@@ -1,0 +1,30 @@
+server:
+  port: 8081
+nacos:
+  address: 127.0.0.1:8848
+dubbo:
+  protocol:
+    name: dubbo
+    port: 20881
+  registry:
+    address: nacos://${nacos.address}
+    username: nacos
+    password: nacos
+    group: fusion-center
+  config-center:
+    address: nacos://${nacos.address}
+    group: fusion-center
+    config-file: dubbo.properties # optional
+    namespace: fusion-center
+  provider:
+    group: trip-server-dev
+    version: 1.0.0
+    timeout: 6000
+    loadbalance: roundrobin
+  consumer:
+    group: trip-server-dev
+    version: 1.0.0
+    timeout: 6000
+  application:
+    qos-enable: true
+    qos-port: 22222

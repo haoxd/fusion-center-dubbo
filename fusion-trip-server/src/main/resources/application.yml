@@ -1,0 +1,19 @@
+server:
+  shutdown: graceful
+spring:
+  profiles:
+    active: ${profileActive}
+  application:
+    name: trip-server
+  main:
+    allow-bean-definition-overriding: true
+dubbo:
+  application:
+    name: trip-server
+    shutwait: 30000
+  scan:
+    base-packages: com.fusion.center.trip.interfaces.rpc
+
+
+
+
