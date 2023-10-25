@@ -25,7 +25,7 @@
 
 3、fusion-restful 北向流量入口，对外暴露接口服务
 
-4、fusion-trip 南向接口服务，调用三方接口服务
+4、fusion-trip 南向出口服务，调用三方接口服务
 
 5、fusion-common 核心模块的封装
 
