@@ -15,7 +15,7 @@
 - 语言：Java 8
 - IDE(JAVA)： Eclipse安装lombok插件 或者 IDEA
 - 依赖管理：Maven
-- 数据库：RDS
+- 数据库：mysql
 - 注册中心：nacos
 
 # 工程代码说明
