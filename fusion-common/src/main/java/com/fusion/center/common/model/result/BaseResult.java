@@ -17,6 +17,8 @@ public class BaseResult implements Serializable {
 
     protected String code;
 
+    protected String traceId;
+
     public boolean successful() {
         return !this.fail();
     }
