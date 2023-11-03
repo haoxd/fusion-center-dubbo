@@ -45,6 +45,8 @@
         <guava.version>31.1-jre</guava.version>
         <hibernate-validator.version>6.0.13.Final</hibernate-validator.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
+        <logstash.encoder.version>5.2</logstash.encoder.version>
+        <transmittable-thread-local.version>2.12.1</transmittable-thread-local.version>
     </properties>
 
     <dependencyManagement>
@@ -198,6 +200,19 @@
                         <artifactId>aspectjrt</artifactId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+
+            <!--TTL 解决线程池，异步 无法做到全链路日志追踪问题-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>transmittable-thread-local</artifactId>
+                <version>${transmittable-thread-local.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>net.logstash.logback</groupId>
+                <artifactId>logstash-logback-encoder</artifactId>
+                <version>${logstash.encoder.version}</version>
             </dependency>
 
         </dependencies>

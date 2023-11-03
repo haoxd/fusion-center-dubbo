@@ -7,14 +7,6 @@
 
     <context:property-placeholder/>
 
-    <dubbo:reference id="queryUserInfoDubboRpcService" check="true" version="${dubbo.consumer.bff.version}" group="${dubbo.consumer.bff.group}"
-                     timeout="${dubbo.consumer.bff.timeout}" loadbalance="${dubbo.consumer.bff.loadbalance}"
-                     interface="com.fusion.center.bff.interfaces.QueryUserInfoDubboRpcService"/>
 
-    <dubbo:reference id="asyncDubboRpcService" check="true" version="${dubbo.consumer.bff.version}" group="${dubbo.consumer.bff.group}"
-                     timeout="${dubbo.consumer.bff.timeout}" loadbalance="${dubbo.consumer.bff.loadbalance}"
-                     interface="com.fusion.center.bff.interfaces.AsyncDubboRpcService">
-        <dubbo:method name="sayHello" async="true" cache="lru"/>
-    </dubbo:reference>
 
 </beans>

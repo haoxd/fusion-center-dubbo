@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration debug="false">
     <!--定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径 -->
-    <property name="LOG_HOME" value="/home/admin/taobao-tomcat-production-7.0.59.3/logs/fusion_rest"/>
+    <property name="LOG_HOME" value="/home/admin/taobao-tomcat-production-7.0.59.3/logs/fusion-rest"/>
     <!--<property name="LOG_HOME" value="/ngbss/webapp/logs/bee/open" />-->
     <!-- <property name="LOG_HOME" value="/home/webapp/ms_ordercenter/logs/bee/open" />-->
     <!-- 控制台输出 -->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <!--格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符 -->
-            <pattern>[fusion_rest]%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{50} - %msg%n</pattern>
+            <pattern>[fusion-rest]%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger{50} - %msg%n</pattern>
             <charset>UTF-8</charset>
         </encoder>
     </appender>
@@ -16,10 +16,10 @@
     <!-- 按照每天生成日志文件 -->
     <appender name="FILE"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${LOG_HOME}/fusion_rest.log</file>
+        <file>${LOG_HOME}/fusion-rest.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--日志文件输出的文件名 -->
-            <FileNamePattern>${LOG_HOME}/fusion_rest.%d{yyyy-MM-dd}.%i.log</FileNamePattern>
+            <FileNamePattern>${LOG_HOME}/fusion-rest.%d{yyyy-MM-dd}.%i.log</FileNamePattern>
 
             <timeBasedFileNamingAndTriggeringPolicy
                     class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">

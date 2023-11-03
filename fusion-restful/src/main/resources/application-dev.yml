@@ -10,12 +10,12 @@ dubbo:
     address: nacos://${nacos.address}
     username: nacos
     password: nacos
-    group: fusion-center
+    group: yd-fusion-center
   config-center:
     address: nacos://${nacos.address}
-    group: fusion-center
+    group: yd-fusion-center
     config-file: dubbo.properties # optional
-    namespace: fusion-center
+    namespace: yd-fusion-center
   application:
     qos-enable: true
     qos-port: 33333
